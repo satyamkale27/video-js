@@ -25,8 +25,8 @@ const Anivideoplayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
       preload: "auto",
       responsive: true,
       fluid: false,
-      width: 640,
-      height: 360,
+      width: 940,
+      height: 560,
       sources: [
         {
           src: videoUrl,
@@ -82,7 +82,7 @@ const Anivideoplayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
   };
 
   return (
-    <div className="flex flex-col items-center p-5 bg-gray-900 rounded-lg shadow-md w-[660px]">
+    <div className="flex flex-col items-center p-5 bg-gray-900 rounded-lg shadow-md w-[960px]">
       {/* Video Player */}
       <div data-vjs-player className="relative w-full">
         <video
@@ -92,7 +92,7 @@ const Anivideoplayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
         {/* Quality Dropdown Menu */}
         <div
           id="quality-menu"
-          className="absolute top-2 right-2 bg-gray-800 p-2 rounded-md hidden"
+          className="absolute top-2 right-2 bg-gray-800 p-2 rounded-md hidden "
         >
           <label htmlFor="quality-select" className="text-sm text-gray-300">
             Quality:

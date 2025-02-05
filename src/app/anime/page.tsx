@@ -8,9 +8,15 @@ const HomePage: React.FC = () => {
   );
 
   return (
-    <div>
-      <h1>Welcome to the Video Player</h1>
-      <Anivideoplayer videoUrl={videoUrl} />
+    <div className="flex flex-col items-center justify-center min-h-screen p-8">
+      <h1 className="text-4xl font-bold mb-6 text-center">
+        Welcome to the Video Player
+      </h1>
+      <div className="w-full max-w-5xl">
+        {" "}
+        {/* Increase the width here */}
+        <Anivideoplayer videoUrl={videoUrl} />
+      </div>
     </div>
   );
 };
